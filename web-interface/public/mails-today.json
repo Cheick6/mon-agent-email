@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "sender": "newsletter@tech-news.com",
+    "subject": "Les nouveautés IA de la semaine",
+    "date": "2023-10-27T09:15:00",
+    "summary": "Résumé des dernières avancées en LLM et sortie de nouveaux modèles open-source."
+  },
+  {
+    "id": "2",
+    "sender": "rh@mon-entreprise.com",
+    "subject": "Entretien annuel",
+    "date": "2023-10-27T10:30:00",
+    "summary": "Invitation pour l'entretien annuel prévu le 5 novembre. Merci de préparer vos objectifs."
+  },
+  {
+    "id": "3",
+    "sender": "client@projet-x.com",
+    "subject": "Urgent : Validation maquettes",
+    "date": "2023-10-27T14:45:00",
+    "summary": "Le client demande une validation rapide des dernières maquettes envoyées avant ce soir."
+  }
+]

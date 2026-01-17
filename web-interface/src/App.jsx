@@ -1,34 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [emails, setEmails] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  // Récupération des données (simulation de l'API)
+  useEffect(() => {
+    fetch('/mails-today.json')
+      .then(response => response.json())
+      .then(data => {
+        setEmails(data)
+        setLoading(false)
+      })
+      .catch(error => console.error("Erreur de chargement:", error))
+  }, [])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="container">
+      <header>
+        <h1>📨 Mon Agent Emails</h1>
+        <p>Récapitulatif quotidien généré par IA</p>
+      </header>
+
+      <main>
+        {loading ? (
+          <p>Chargement des emails...</p>
+        ) : (
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Expéditeur</th>
+                  <th>Objet</th>
+                  <th>Date</th>
+                  <th>Résumé IA</th>
+                </tr>
+              </thead>
+              <tbody>
+                {emails.map(email => (
+                  <tr key={email.id}>
+                    <td><strong>{email.sender}</strong></td>
+                    <td>{email.subject}</td>
+                    <td>{new Date(email.date).toLocaleString()}</td>
+                    <td className="summary">{email.summary}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </main>
+    </div>
   )
 }
 
