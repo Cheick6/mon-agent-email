@@ -7,7 +7,7 @@ function App() {
 
   // Récupération des données (simulation de l'API)
   useEffect(() => {
-    fetch('/mails-today.json')
+    fetch('/mes_emails.json')
       .then(response => response.json())
       .then(data => {
         setEmails(data)
@@ -38,14 +38,15 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                {emails.map(email => (
-                  <tr key={email.id}>
-                    <td><strong>{email.sender}</strong></td>
-                    <td>{email.subject}</td>
-                    <td>{new Date(email.date).toLocaleString()}</td>
-                    <td className="summary">{email.summary}</td>
-                  </tr>
-                ))}
+                {emails.map((email, index) => (
+                <tr key={index}>
+                    {/* On utilise les noms de champs probables de ton export n8n */}
+                    <td><strong>{email.from || email.sender}</strong></td>
+                    <td>{email.subject || email.sujet}</td>
+                    <td>{email.date ? new Date(email.date).toLocaleString() : 'Date inconnue'}</td>
+                    <td className="summary">{email.summary || email.resume}</td>
+                </tr>
+              ))}
               </tbody>
             </table>
           </div>
