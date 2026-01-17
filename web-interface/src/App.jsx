@@ -5,12 +5,25 @@ function App() {
   const [emails, setEmails] = useState([])
   const [loading, setLoading] = useState(true)
 
-  // Récupération des données (simulation de l'API)
   useEffect(() => {
     fetch('/mes_emails.json')
       .then(response => response.json())
       .then(data => {
-        setEmails(data)
+        // 1. On récupère la liste brute
+        const listeBrute = data[0].data || [];
+        
+        // 2. On "nettoie" chaque email pour sortir les infos du champ "output"
+        const emailsPropres = listeBrute.map(item => {
+          try {
+            // L'info réelle est cachée dans le texte "output", on le transforme en objet
+            return JSON.parse(item.output);
+          } catch (e) {
+            console.error("Erreur de lecture d'un email", e);
+            return null; // En cas d'erreur
+          }
+        }).filter(item => item !== null); // On enlève les erreurs
+
+        setEmails(emailsPropres)
         setLoading(false)
       })
       .catch(error => console.error("Erreur de chargement:", error))
@@ -38,16 +51,16 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                {emails.map((email, index) => (
-                <tr key={index}>
-                    {/* On utilise les noms de champs probables de ton export n8n */}
-                    <td><strong>{email.from || email.sender}</strong></td>
-                    <td>{email.subject || email.sujet}</td>
-                    <td>{email.date ? new Date(email.date).toLocaleString() : 'Date inconnue'}</td>
-                    <td className="summary">{email.summary || email.resume}</td>
-                </tr>
-              ))}
-              </tbody>
+                  {emails.map((email, index) => (
+                    <tr key={index}>
+                      <td><strong>{email.from}</strong></td>
+                      <td>{email.subject}</td>
+                      {/* La date est déjà formatée dans ton JSON, on l'affiche direct */}
+                      <td>{email.date}</td> 
+                      <td className="summary">{email.summary}</td>
+                    </tr>
+                  ))}
+                </tbody>
             </table>
           </div>
         )}
