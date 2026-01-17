@@ -6,7 +6,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/mes_emails.json')
+    fetch('/mon-agent-email/web-interface/public/mes_emails.json')
       .then(response => response.json())
       .then(data => {
         // 1. On récupère la liste brute
