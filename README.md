@@ -10,7 +10,7 @@ Ce projet est une application complète qui automatise la lecture de mes emails,
 
 Voici à quoi ressemble le cerveau de l'automatisation. Le workflow part de la récupération des emails jusqu'au commit sur GitHub.
 
-![Capture d'écran du workflow n8n](./workflow-n8n.png)
+![Capture d'écran du workflow n8n](./2workflow-n8n.png)
 
 *(Si l'image ne s'affiche pas, place une capture d'écran nommée `workflow-n8n.png` à la racine du projet)*
 
@@ -24,8 +24,6 @@ Le projet connecte plusieurs technologies pour fonctionner de manière autonome 
 2.  **Cerveau (Backend) :** **n8n**. Il orchestre tout le processus, discute avec l'IA et formate les données.
 3.  **Stockage :** **GitHub**. Le fichier JSON sert de base de données.
 4.  **Frontend :** **React (Vite)**. Une interface moderne pour lire les résumés.
-5.  **Déploiement :** **GitHub Pages**. Hébergement gratuit et mise à jour automatique.
-
 ---
 
 ## 💡 Le Défi Technique : Pourquoi GitHub et pas mon Disque Dur ?
