@@ -1,1 +1,78 @@
-[{"data":[{"sujet":"Valeur","Subject":"Test2","resume":"Valeur","output":"{\"from\": \"sowcheickoumar75@gmail.com\", \"date\": \"18/01/2026 16:32:53\", \"subject\": \"Test2\", \"summary\": \"L'expéditeur teste si son email est pris en compte.\"}"},{"sujet":"Valeur","Subject":"Hope you cleared your afternoon","resume":"Valeur","output":"{\"from\": \"updates@groq.co\", \"date\": \"18/01/2026 16:08:38\", \"subject\": \"Hope you cleared your afternoon\", \"summary\": \"La clé API Groq est désormais active et prête à l'utilisation.\"}"},{"sujet":"Valeur","Subject":"Cheick oumar, passez en revue les paramètres de votre compte Google","resume":"Valeur","output":"{\n  \"from\": \"no-reply@google.com\",\n  \"date\": \"18/01/2026 15:34:47\",\n  \"subject\": \"Cheick oumar, passez en revue les paramètres de votre compte Google\",\n  \"summary\": \"Google demande de vérifier les paramètres de compte.\"\n}"},{"sujet":"Valeur","Subject":"Alerte de sécurité","resume":"Valeur","output":"{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"18/01/2026 15:33:44\",\n  \"subject\": \"Alerte de sécurité\",\n  \"summary\": \"Une nouvelle connexion à votre compte Google a été détectée depuis un Apple iPhone 16.\"\n}"},{"sujet":"Valeur","Subject":"Test","resume":"Valeur","output":"{\n  \"from\": \"cheicksow384@gmail.com\",\n  \"date\": \"18/01/2026 15:33:01\",\n  \"subject\": \"Test\",\n  \"summary\": \"L'expéditeur souhaite savoir s'il sera ajouté à une liste finale.\"\n}"}]}]
+[
+  {
+    "data": [
+      {
+        "sujet": "Valeur",
+        "Subject": "Test2",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"sowcheickoumar75@gmail.com\",\n  \"date\": \"18/01/2026 16:32:53\",\n  \"subject\": \"Test2\",\n  \"summary\": \"Email de test pour vérifier la prise en compte du message\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Hope you cleared your afternoon",
+        "resume": "Valeur",
+        "output": "{\"from\": \"updates@groq.co\", \"date\": \"18/01/2026 16:08:38\", \"subject\": \"Hope you cleared your afternoon\", \"summary\": \"L'expéditeur Groq confirme que la clé API est active.\"}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Cheick oumar, passez en revue les paramètres de votre compte Google",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"no-reply@google.com\",\n  \"date\": \"18/01/2026 15:34:47\",\n  \"subject\": \"Cheick oumar, passez en revue les paramètres de votre compte Google\",\n  \"summary\": \"Google demande de vérifier les paramètres du compte.\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Alerte de sécurité",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"18/01/2026 15:33:44\",\n  \"subject\": \"Alerte de sécurité\",\n  \"summary\": \"Une nouvelle connexion à votre compte Google a été détectée depuis un Apple iPhone 16.\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Test",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"cheicksow384@gmail.com\",\n  \"date\": \"18/01/2026 15:33:01\",\n  \"subject\": \"Test\",\n  \"summary\": \"L'expéditeur souhaite savoir s'il sera ajouté à la liste finale.\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Export Automatique JSON",
+        "resume": "Valeur",
+        "output": "{\"from\": \"sowcheickoumar75@gmail.com\", \"date\": \"17/01/2026 15:13:39\", \"subject\": \"Export Automatique JSON\", \"summary\": \"L'expéditeur a envoyé un export automatique de résumés d'emails généré par l'IA.\"}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Export Automatique JSON",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"sowcheickoumar75@gmail.com\",\n  \"date\": \"17/01/2026 15:12:58\",\n  \"subject\": \"Export Automatique JSON\",\n  \"summary\": \"L'email contient un export automatique des résumés d'emails généré par l'IA.\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Alerte de sécurité",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"17/01/2026 13:28:04\",\n  \"subject\": \"Alerte de sécurité\",\n  \"summary\": \"Une nouvelle connexion à un compte Google a été détectée depuis un Mac.\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Alerte de sécurité",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"17/01/2026 12:19:09\",\n  \"subject\": \"Alerte de sécurité\",\n  \"summary\": \"Google signale une nouvelle connexion au compte sowcheickoumar75@gmail.com.\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Votre compte Google a bien été récupéré",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"17/01/2026 12:19:09\",\n  \"subject\": \"Votre compte Google a bien été récupéré\",\n  \"summary\": \"Le compte sowcheickoumar75@gmail.com a été récupéré avec succès.\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Alerte de sécurité",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"17/01/2026 12:19:05\",\n  \"subject\": \"Alerte de sécurité\",\n  \"summary\": \"Un nouvelle clé d'accès a été ajoutée au compte sowcheickoumar75@gmail.com\"\n}"
+      },
+      {
+        "sujet": "Valeur",
+        "Subject": "Alerte de sécurité",
+        "resume": "Valeur",
+        "output": "{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"17/01/2026 12:18:55\",\n  \"subject\": \"Alerte de sécurité\",\n  \"summary\": \"Le mot de passe du compte Google sowcheickoumar75@gmail.com a été modifié.\"\n}"
+      }
+    ]
+  }
+]
