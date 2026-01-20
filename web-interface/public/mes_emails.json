@@ -3,33 +3,15 @@
     "data": [
       {
         "sujet": "Valeur",
-        "Subject": "Test2",
+        "Subject": "Retour",
         "resume": "Valeur",
-        "output": "{\n  \"from\": \"sowcheickoumar75@gmail.com\",\n  \"date\": \"18/01/2026 16:32:53\",\n  \"subject\": \"Test2\",\n  \"summary\": \"L'expéditeur teste si son email est pris en compte.\"\n}"
+        "output": "{\n  \"from\": \"sowcheickoumar75@gmail.com\",\n  \"date\": \"20/01/2026 14:41:04\",\n  \"subject\": \"Retour\",\n  \"summary\": \"Le colis est en attente au dépôt.\"\n}"
       },
       {
         "sujet": "Valeur",
-        "Subject": "Hope you cleared your afternoon",
+        "Subject": "loisir",
         "resume": "Valeur",
-        "output": "{\"from\": \"updates@groq.co\", \"date\": \"18/01/2026 16:08:38\", \"subject\": \"Hope you cleared your afternoon\", \"summary\": \"La clé API Groq est désormais active.\"}"
-      },
-      {
-        "sujet": "Valeur",
-        "Subject": "Cheick oumar, passez en revue les paramètres de votre compte Google",
-        "resume": "Valeur",
-        "output": "{\"from\": \"no-reply@google.com\", \"date\": \"18/01/2026 15:34:47\", \"subject\": \"Cheick oumar, passez en revue les paramètres de votre compte Google\", \"summary\": \"Google demande de vérifier les paramètres de compte\"}"
-      },
-      {
-        "sujet": "Valeur",
-        "Subject": "Alerte de sécurité",
-        "resume": "Valeur",
-        "output": "{\n  \"from\": \"no-reply@accounts.google.com\",\n  \"date\": \"18/01/2026 15:33:44\",\n  \"subject\": \"Alerte de sécurité\",\n  \"summary\": \"Nouvelle connexion détectée à votre compte Google depuis un Apple iPhone 16.\"\n}"
-      },
-      {
-        "sujet": "Valeur",
-        "Subject": "Test",
-        "resume": "Valeur",
-        "output": "{\n  \"from\": \"cheicksow384@gmail.com\",\n  \"date\": \"18/01/2026 15:33:01\",\n  \"subject\": \"Test\",\n  \"summary\": \"L'expéditeur souhaite savoir s'il sera ajouté à une liste finale.\"\n}"
+        "output": "{\n  \"from\": \"sowcheickoumar75@gmail.com\",\n  \"date\": \"20/01/2026 14:15:55\",\n  \"subject\": \"loisir\",\n  \"summary\": \"L'expéditeur a envoyé un email de test concernant le loisir.\"\n}"
       }
     ]
   }

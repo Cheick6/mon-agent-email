@@ -45,3 +45,19 @@ tr:hover {
   color: #ccc;
   max-width: 400px;
 }
+
+
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem; /* Réduit la marge de 32px à 16px sur mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Réduit un peu la taille du titre */
+  }
+  
+  th, td {
+    padding: 8px 5px; /* Réduit l'espace dans les cellules du tableau */
+    font-size: 0.9rem; /* Texte un peu plus petit pour en afficher plus */
+  }
+}
